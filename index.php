@@ -29,7 +29,7 @@ $year = date('Y');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
-    <link rel="stylesheet" href="assets/css/style.css?v=20260930-8">
+    <link rel="stylesheet" href="assets/css/style.css?v=20260930-10">
 </head>
 <body>
     <a class="skip-link" href="#contenuto">Vai al contenuto</a>
