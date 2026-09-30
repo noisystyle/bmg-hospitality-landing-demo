@@ -26,7 +26,7 @@ $year = date('Y');
     <meta name="theme-color" content="#17130f">
     <title>Be Marketing Group — Hospitality di lusso</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
-    <link rel="stylesheet" href="assets/css/style.css?v=20260930-6">
+    <link rel="stylesheet" href="assets/css/style.css?v=20260930-7">
 </head>
 <body>
     <a class="skip-link" href="#contenuto">Vai al contenuto</a>
@@ -217,11 +217,11 @@ $year = date('Y');
                 <span class="mono">04. CONTATTI</span>
                 <span class="personal-note" data-personal-note <?= $personalized ? '' : 'hidden' ?>><?= $personalized ? "Un’idea per {$hotel}" : '' ?></span>
             </div>
+            <h2 data-contact-heading>
+                <?= $contactName !== '' ? $contactName . ', ne parliamo?' : 'Iniziamo da una conversazione?' ?>
+            </h2>
             <div class="contact-layout">
                 <div class="contact-copy">
-                    <h2 data-contact-heading>
-                        <?= $contactName !== '' ? $contactName . ', ne parliamo?' : 'Iniziamo da una conversazione?' ?>
-                    </h2>
                     <p>Raccontaci la struttura, il punto da cui parti e ciò che vorresti migliorare. Ti risponderemo con un primo punto di vista, senza presentazioni infinite.</p>
                     <a class="contact-mail" data-contact-link href="mailto:info@bemarketinggroup.it?subject=<?= $mailSubject ?>">info@bemarketinggroup.it <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
                 </div>
