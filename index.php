@@ -26,7 +26,7 @@ $year = date('Y');
     <meta name="theme-color" content="#17130f">
     <title>Be Marketing Group — Hospitality di lusso</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
-    <link rel="stylesheet" href="assets/css/style.css?v=20260930-2">
+    <link rel="stylesheet" href="assets/css/style.css?v=20260930-3">
 </head>
 <body>
     <a class="skip-link" href="#contenuto">Vai al contenuto</a>
