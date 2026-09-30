@@ -29,7 +29,7 @@ $year = date('Y');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
-    <link rel="stylesheet" href="assets/css/style.css?v=20260930-10">
+    <link rel="stylesheet" href="assets/css/style.css?v=20260930-11">
 </head>
 <body>
     <a class="skip-link" href="#contenuto">Vai al contenuto</a>
@@ -231,7 +231,17 @@ $year = date('Y');
                 <form class="contact-form" data-contact-form>
                     <label><span class="mono">Nome e cognome</span><input type="text" name="name" autocomplete="name" required placeholder="Come ti chiami?"></label>
                     <label><span class="mono">Email</span><input type="email" name="email" autocomplete="email" required placeholder="nome@dominio.com"></label>
-                    <label><span class="mono">Su cosa vuoi lavorare?</span><select name="service"><option value="">Seleziona</option><option>Posizionamento e strategia</option><option>Brand identity</option><option>Sito e presenza digitale</option><option>Social media e contenuti</option><option>Campagne</option><option>Altro</option></select></label>
+                    <fieldset class="choice-field">
+                        <legend class="mono">Su cosa vuoi lavorare?</legend>
+                        <div class="choice-grid choice-grid--6">
+                            <label class="choice-option"><input type="radio" name="service" value="Posizionamento e strategia"><span>Posizionamento e strategia</span></label>
+                            <label class="choice-option"><input type="radio" name="service" value="Brand identity"><span>Brand identity</span></label>
+                            <label class="choice-option"><input type="radio" name="service" value="Sito e presenza digitale"><span>Sito e presenza digitale</span></label>
+                            <label class="choice-option"><input type="radio" name="service" value="Social media e contenuti"><span>Social media e contenuti</span></label>
+                            <label class="choice-option"><input type="radio" name="service" value="Campagne"><span>Campagne</span></label>
+                            <label class="choice-option"><input type="radio" name="service" value="Altro"><span>Altro</span></label>
+                        </div>
+                    </fieldset>
                     <label><span class="mono">La struttura e il progetto</span><textarea name="message" rows="3" required placeholder="Da dove partiamo?"></textarea></label>
                     <div class="contact-form-bottom"><small>Usiamo questi dati soltanto per rispondere alla tua richiesta.</small><button type="submit">Richiedi un confronto <i class="ph ph-arrow-up-right" aria-hidden="true"></i></button></div>
                     <p class="form-status" data-form-status role="status" aria-live="polite"></p>

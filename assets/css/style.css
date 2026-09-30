@@ -454,6 +454,15 @@ body.lightbox-open { overflow: hidden; }
 .contact-form select option { color: var(--ink); background: var(--cream); }
 .contact-form textarea { min-height: 76px; resize: vertical; }
 .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { border-bottom-color: var(--cream); }
+.choice-field { min-width: 0; margin: 0; padding: 0; border: 0; }
+.choice-field legend { margin-bottom: 10px; padding: 0; color: rgba(250,248,242,.68); }
+.choice-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.contact-form .choice-option { position: relative; display: block; min-width: 0; cursor: pointer; }
+.contact-form .choice-option input { position: absolute; width: 1px; height: 1px; margin: 0; padding: 0; overflow: hidden; border: 0; clip-path: inset(50%); white-space: nowrap; }
+.contact-form .choice-option span { display: flex; min-height: 46px; height: 100%; align-items: center; justify-content: center; padding: 8px 9px; border: 1px solid rgba(250,248,242,.46); border-radius: 9px; color: var(--cream); font-size: 13px; line-height: 1.2; text-align: center; transition: background .2s ease, color .2s ease, border-color .2s ease; }
+.choice-option:hover span { border-color: var(--cream); background: rgba(250,248,242,.08); }
+.contact-form .choice-option input:checked + span { border-color: var(--cream); color: var(--accent); background: var(--cream); }
+.choice-option input:focus-visible + span { outline: 2px solid var(--cream); outline-offset: 3px; }
 .contact-form-bottom { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .contact-form-bottom small { max-width: 285px; color: rgba(250,248,242,.68); }
 .contact-form button { display: inline-flex; align-items: center; gap: 9px; min-height: 50px; padding: 0 22px; border: 1px solid var(--cream); border-radius: 999px; color: var(--accent); background: var(--cream); font-weight: 600; cursor: pointer; transition: color .25s ease, background .25s ease; }
@@ -526,11 +535,15 @@ body.lightbox-open { overflow: hidden; }
     .contact-form label { gap: 4px; }
     .contact-form input, .contact-form select, .contact-form textarea { padding-bottom: 7px; font-size: 17px; }
     .contact-form textarea { min-height: 50px; }
+    .choice-field legend { margin-bottom: 7px; }
+    .choice-grid { gap: 6px; }
+    .contact-form .choice-option span { min-height: 42px; padding: 7px 6px; font-size: 12px; }
     .contact-form-bottom small { font-size: 12px; }
     .contact-form button { min-height: 44px; padding-inline: 19px; }
 }
 
 @media (max-width: 900px) {
+    .choice-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .statement-grid, .services-heading { grid-template-columns: 1fr; row-gap: 34px; }
     .statement-copy { max-width: 650px; }
     .service-row { grid-template-columns: 40px 1fr; padding: 24px 0; }
@@ -598,6 +611,7 @@ body.lightbox-open { overflow: hidden; }
     .contact h2 { margin-bottom: 28px; font-size: clamp(44px, 12vw, 60px); }
     .contact-copy p { margin-bottom: 30px; font-size: 16px; }
     .contact-form-bottom { align-items: flex-start; flex-direction: column; }
+    .choice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .site-footer { grid-template-columns: 1fr; }
     .footer-links { justify-self: start; text-align: left; }
     .footer-bottom { grid-column: auto; }
