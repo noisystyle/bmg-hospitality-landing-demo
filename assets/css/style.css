@@ -293,11 +293,12 @@ main section[id] { scroll-margin-top: 92px; }
     display: flex;
     gap: clamp(14px, 2vw, 28px);
     overflow-x: auto;
-    overscroll-behavior-inline: contain;
+    overscroll-behavior-x: contain;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
-    touch-action: pan-x;
+    touch-action: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .gallery-track::-webkit-scrollbar { display: none; }
 .gallery-card {
@@ -538,7 +539,7 @@ body.lightbox-open { overflow: hidden; }
     .showcase-heading { align-items: end; margin-bottom: 34px; }
     .showcase-heading h2 { max-width: 280px; font-size: 43px; }
     .gallery-controls { display: none; }
-    .gallery-track { gap: 14px; padding-bottom: 10px; scroll-padding-inline: var(--pad); }
+    .gallery-track { gap: 14px; padding-bottom: 10px; scroll-padding-inline: var(--pad); scroll-snap-type: x proximity; }
     .gallery-card { height: min(64svh, 560px); border-radius: 20px; scroll-snap-align: start; }
     .gallery-card--landscape { width: 88vw; }
     .gallery-card--portrait { width: 72vw; }
