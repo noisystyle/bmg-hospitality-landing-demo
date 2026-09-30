@@ -32,7 +32,6 @@ if (contactLink) {
 
 let previousScrollY = window.scrollY;
 let headerFramePending = false;
-let headerHidden = false;
 
 const updateHeaderContrast = () => {
     if (!header) return;
@@ -43,39 +42,18 @@ const updateHeaderContrast = () => {
     header.classList.toggle('is-on-light', surface?.dataset.headerContrast === 'dark');
 };
 
-const setHeaderHidden = (hidden) => {
-    if (!header || hidden === headerHidden) return;
-    headerHidden = hidden;
-
-    if (!window.gsap || reduceMotion) {
-        header.classList.toggle('is-hidden', hidden);
-        return;
-    }
-
-    header.classList.remove('is-hidden');
-    window.gsap.killTweensOf(header);
-    header.style.pointerEvents = hidden ? 'none' : 'auto';
-    window.gsap.to(header, {
-        yPercent: hidden ? -112 : 0,
-        opacity: hidden ? 0 : 1,
-        filter: hidden ? 'blur(14px)' : 'blur(0px)',
-        duration: hidden ? .52 : .62,
-        ease: hidden ? 'power3.in' : 'power4.out',
-        overwrite: true
-    });
-};
-
 const updateHeaderVisibility = () => {
     const currentScrollY = window.scrollY;
+    const goingDown = currentScrollY > previousScrollY + 6;
+    const goingUp = currentScrollY < previousScrollY - 6;
 
-    if (currentScrollY <= 36 || currentScrollY < previousScrollY) {
-        setHeaderHidden(false);
-    } else if (currentScrollY > previousScrollY && currentScrollY > 120) {
-        setHeaderHidden(true);
+    if (header) {
+        if (goingDown && currentScrollY > 120) header.classList.add('is-hidden');
+        if (goingUp || currentScrollY < 80) header.classList.remove('is-hidden');
+        updateHeaderContrast();
     }
 
-    previousScrollY = currentScrollY;
-    updateHeaderContrast();
+    previousScrollY = Math.max(currentScrollY, 0);
     headerFramePending = false;
 };
 

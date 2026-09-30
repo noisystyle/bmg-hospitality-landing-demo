@@ -25,8 +25,11 @@ $year = date('Y');
     <meta name="description" content="Be Marketing Group: strategia, identità e comunicazione per hotel e strutture dell’hospitality di lusso.">
     <meta name="theme-color" content="#17130f">
     <title>Be Marketing Group — Hospitality di lusso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
-    <link rel="stylesheet" href="assets/css/style.css?v=20260930-7">
+    <link rel="stylesheet" href="assets/css/style.css?v=20260930-8">
 </head>
 <body>
     <a class="skip-link" href="#contenuto">Vai al contenuto</a>
@@ -266,6 +269,6 @@ $year = date('Y');
     </dialog>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
-    <script src="assets/js/main.js?v=20260930-3" defer></script>
+    <script src="assets/js/main.js?v=20260930-4" defer></script>
 </body>
 </html>
