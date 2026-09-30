@@ -218,7 +218,7 @@ $year = date('Y');
                 <span class="personal-note" data-personal-note <?= $personalized ? '' : 'hidden' ?>><?= $personalized ? "Un’idea per {$hotel}" : '' ?></span>
             </div>
             <h2 data-contact-heading>
-                <?= $contactName !== '' ? $contactName . ', parliamone?' : 'Iniziamo da una conversazione?' ?>
+                <?= $contactName !== '' ? $contactName . ', ne parliamo?' : 'Iniziamo da una conversazione?' ?>
             </h2>
             <p>
                 Un primo confronto serve a capire se c’è una direzione interessante da percorrere insieme.

@@ -24,7 +24,7 @@ if (personalNote && queryHotel) {
     personalNote.textContent = `Un’idea per ${queryHotel}`;
     personalNote.hidden = false;
 }
-if (contactHeading && queryName) contactHeading.textContent = `${queryName}, parliamone?`;
+if (contactHeading && queryName) contactHeading.textContent = `${queryName}, ne parliamo?`;
 if (contactLink) {
     const subject = queryHotel ? `Un confronto su ${queryHotel}` : 'Un confronto con Be Marketing Group';
     contactLink.href = `mailto:info@bemarketinggroup.it?subject=${encodeURIComponent(subject)}`;
