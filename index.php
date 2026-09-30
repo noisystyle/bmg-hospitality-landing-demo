@@ -63,11 +63,11 @@ $year = date('Y');
 
         <section class="visual-intro" aria-label="Il nostro sguardo sull’ospitalità" data-header-contrast="light">
             <article class="visual-card visual-card--wide reveal">
-                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1500&q=88" alt="Piscina di un hotel affacciata sul mare" loading="eager">
+                <img src="assets/images/clients/bellevue-syrene/photo-05-1600.webp" srcset="assets/images/clients/bellevue-syrene/photo-05-480.webp 480w, assets/images/clients/bellevue-syrene/photo-05-960.webp 960w, assets/images/clients/bellevue-syrene/photo-05-1600.webp 1600w" sizes="(max-width: 640px) 100vw, 62vw" alt="Bellevue Syrene — Un tavolo tra le colonne, di fronte al Vesuvio" width="1600" height="1067" loading="lazy" decoding="async">
                 <span>Luoghi che restano</span>
             </article>
             <article class="visual-card visual-card--portrait reveal">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=88" alt="Interno contemporaneo di una struttura ricettiva" loading="eager">
+                <img src="assets/images/clients/vetera-matera/photo-18-1600.webp" srcset="assets/images/clients/vetera-matera/photo-18-480.webp 480w, assets/images/clients/vetera-matera/photo-18-960.webp 960w, assets/images/clients/vetera-matera/photo-18-1600.webp 1600w" sizes="(max-width: 640px) 100vw, 38vw" alt="Vetera Matera — I tavoli della terrazza affacciati su Matera" width="1600" height="2400" loading="lazy" decoding="async">
                 <span>Identità che si riconoscono</span>
             </article>
             <div class="visual-note reveal">
@@ -119,48 +119,13 @@ $year = date('Y');
             </div>
 
             <div class="gallery-track" data-gallery-track>
-                <button class="gallery-card gallery-card--landscape" type="button"
-                    data-full="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=max&w=2400&q=92"
-                    data-caption="Ingresso e accoglienza"
-                    aria-label="Apri Ingresso e accoglienza a schermo intero">
-                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&h=1000&q=88" alt="Ingresso contemporaneo di una struttura ricettiva" loading="lazy">
-                    <span>Ingresso e accoglienza</span>
-                </button>
-                <button class="gallery-card gallery-card--portrait" type="button"
-                    data-full="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=max&w=2400&q=92"
-                    data-caption="Suite e interni"
-                    aria-label="Apri Suite e interni a schermo intero">
-                    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=900&h=1200&q=88" alt="Camera luminosa dai toni neutri" loading="lazy">
-                    <span>Suite e interni</span>
-                </button>
-                <button class="gallery-card gallery-card--landscape" type="button"
-                    data-full="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=max&w=2400&q=92"
-                    data-caption="Piscina e paesaggio"
-                    aria-label="Apri Piscina e paesaggio a schermo intero">
-                    <img src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=1600&h=1000&q=88" alt="Piscina di una villa immersa nel paesaggio" loading="lazy">
-                    <span>Piscina e paesaggio</span>
-                </button>
-                <button class="gallery-card gallery-card--square" type="button"
-                    data-full="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=max&w=2400&q=92"
-                    data-caption="Dettagli di camera"
-                    aria-label="Apri Dettagli di camera a schermo intero">
-                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&h=1200&q=88" alt="Dettagli curati di una camera d’hotel" loading="lazy">
-                    <span>Dettagli di camera</span>
-                </button>
-                <button class="gallery-card gallery-card--portrait" type="button"
-                    data-full="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=max&w=2400&q=92"
-                    data-caption="Spazi comuni"
-                    aria-label="Apri Spazi comuni a schermo intero">
-                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&h=1200&q=88" alt="Salotto elegante con arredi contemporanei" loading="lazy">
-                    <span>Spazi comuni</span>
-                </button>
-                <button class="gallery-card gallery-card--landscape" type="button"
-                    data-full="https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=max&w=2400&q=92"
-                    data-caption="Materia e luce"
-                    aria-label="Apri Materia e luce a schermo intero">
-                    <img src="https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=1600&h=1000&q=88" alt="Interno caratterizzato da luce naturale e materiali caldi" loading="lazy">
-                    <span>Materia e luce</span>
-                </button>
+                <button class="gallery-card gallery-card--landscape" type="button" data-full="assets/images/clients/bellevue-syrene/photo-09-full.webp" data-caption="Bellevue Syrene — L&#x27;ingresso nel giardino mediterraneo" aria-label="Apri la fotografia di Bellevue Syrene"><img src="assets/images/clients/bellevue-syrene/photo-09-1600.webp" srcset="assets/images/clients/bellevue-syrene/photo-09-480.webp 480w, assets/images/clients/bellevue-syrene/photo-09-960.webp 960w, assets/images/clients/bellevue-syrene/photo-09-1600.webp 1600w" sizes="(max-width: 640px) 90vw, 54vw" alt="Bellevue Syrene — L&#x27;ingresso nel giardino mediterraneo" width="1600" height="1067" loading="lazy" decoding="async"><span>Bellevue Syrene · L&#x27;ingresso nel giardino mediterraneo</span></button>
+                <button class="gallery-card gallery-card--portrait" type="button" data-full="assets/images/clients/vetera-matera/photo-14-full.webp" data-caption="Vetera Matera — Un passaggio nella pietra" aria-label="Apri la fotografia di Vetera Matera"><img src="assets/images/clients/vetera-matera/photo-14-1600.webp" srcset="assets/images/clients/vetera-matera/photo-14-480.webp 480w, assets/images/clients/vetera-matera/photo-14-960.webp 960w, assets/images/clients/vetera-matera/photo-14-1600.webp 1600w" sizes="(max-width: 640px) 72vw, 30vw" alt="Vetera Matera — Un passaggio nella pietra" width="1600" height="2400" loading="lazy" decoding="async"><span>Vetera Matera · Un passaggio nella pietra</span></button>
+                <button class="gallery-card gallery-card--portrait" type="button" data-full="assets/images/clients/grand-hotel-aminta/photo-19-full.webp" data-caption="Grand Hotel Aminta — La terrazza nell&#x27;ora blu" aria-label="Apri la fotografia di Grand Hotel Aminta"><img src="assets/images/clients/grand-hotel-aminta/photo-19-1600.webp" srcset="assets/images/clients/grand-hotel-aminta/photo-19-480.webp 480w, assets/images/clients/grand-hotel-aminta/photo-19-960.webp 960w, assets/images/clients/grand-hotel-aminta/photo-19-1600.webp 1600w" sizes="(max-width: 640px) 72vw, 30vw" alt="Grand Hotel Aminta — La terrazza nell&#x27;ora blu" width="1600" height="2400" loading="lazy" decoding="async"><span>Grand Hotel Aminta · La terrazza nell&#x27;ora blu</span></button>
+                <button class="gallery-card gallery-card--portrait" type="button" data-full="assets/images/clients/grand-hotel-la-favorita/photo-07-full.webp" data-caption="Grand Hotel La Favorita — La tavola sotto il pergolato di limoni" aria-label="Apri la fotografia di Grand Hotel La Favorita"><img src="assets/images/clients/grand-hotel-la-favorita/photo-07-1600.webp" srcset="assets/images/clients/grand-hotel-la-favorita/photo-07-480.webp 480w, assets/images/clients/grand-hotel-la-favorita/photo-07-960.webp 960w, assets/images/clients/grand-hotel-la-favorita/photo-07-1600.webp 1600w" sizes="(max-width: 640px) 72vw, 30vw" alt="Grand Hotel La Favorita — La tavola sotto il pergolato di limoni" width="1600" height="2400" loading="lazy" decoding="async"><span>Grand Hotel La Favorita · La tavola sotto il pergolato di limoni</span></button>
+                <button class="gallery-card gallery-card--portrait" type="button" data-full="assets/images/clients/zest-restaurant/photo-11-full.webp" data-caption="Zest Sorrento — Un dettaglio del risotto" aria-label="Apri la fotografia di Zest Sorrento"><img src="assets/images/clients/zest-restaurant/photo-11-1600.webp" srcset="assets/images/clients/zest-restaurant/photo-11-480.webp 480w, assets/images/clients/zest-restaurant/photo-11-960.webp 960w, assets/images/clients/zest-restaurant/photo-11-1600.webp 1600w" sizes="(max-width: 640px) 72vw, 30vw" alt="Zest Sorrento — Un dettaglio del risotto" width="1600" height="2400" loading="lazy" decoding="async"><span>Zest Sorrento · Un dettaglio del risotto</span></button>
+                <button class="gallery-card gallery-card--portrait" type="button" data-full="assets/images/clients/europa-palace/photo-04-full.webp" data-caption="Grand Hotel Europa Palace — Il pontile e la piscina affacciati sul mare" aria-label="Apri la fotografia di Grand Hotel Europa Palace"><img src="assets/images/clients/europa-palace/photo-04-1600.webp" srcset="assets/images/clients/europa-palace/photo-04-480.webp 480w, assets/images/clients/europa-palace/photo-04-960.webp 960w, assets/images/clients/europa-palace/photo-04-1600.webp 1600w" sizes="(max-width: 640px) 72vw, 30vw" alt="Grand Hotel Europa Palace — Il pontile e la piscina affacciati sul mare" width="1600" height="2133" loading="lazy" decoding="async"><span>Grand Hotel Europa Palace · Il pontile e la piscina affacciati sul mare</span></button>
+                <button class="gallery-card gallery-card--portrait" type="button" data-full="assets/images/clients/artema-matera/photo-18-full.webp" data-caption="Artema Matera — La cura del piatto, al momento del servizio" aria-label="Apri la fotografia di Artema Matera"><img src="assets/images/clients/artema-matera/photo-18-1600.webp" srcset="assets/images/clients/artema-matera/photo-18-480.webp 480w, assets/images/clients/artema-matera/photo-18-960.webp 960w, assets/images/clients/artema-matera/photo-18-1600.webp 1600w" sizes="(max-width: 640px) 72vw, 30vw" alt="Artema Matera — La cura del piatto, al momento del servizio" width="1600" height="2400" loading="lazy" decoding="async"><span>Artema Matera · La cura del piatto, al momento del servizio</span></button>
             </div>
 
             <div class="gallery-progress" aria-hidden="true"><span data-gallery-progress></span></div>
