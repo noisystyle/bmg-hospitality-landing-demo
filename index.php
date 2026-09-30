@@ -269,6 +269,6 @@ $year = date('Y');
     </dialog>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
-    <script src="assets/js/main.js?v=20260930-4" defer></script>
+    <script src="assets/js/main.js?v=20260930-5" defer></script>
 </body>
 </html>
