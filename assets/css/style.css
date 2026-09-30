@@ -61,7 +61,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
     backdrop-filter: blur(9px);
     -webkit-mask-image: linear-gradient(180deg, #000 0%, rgba(0,0,0,.88) 42%, rgba(0,0,0,.34) 73%, transparent 100%);
     mask-image: linear-gradient(180deg, #000 0%, rgba(0,0,0,.88) 42%, rgba(0,0,0,.34) 73%, transparent 100%);
-    transition: opacity .55s cubic-bezier(.22, 1, .36, 1);
+    transition: opacity .65s cubic-bezier(.22, 1, .36, 1);
+    will-change: opacity;
 }
 .site-header::before { background: linear-gradient(180deg, rgba(23,19,15,.28) 0%, rgba(23,19,15,.07) 56%, transparent 100%); }
 .site-header::after { opacity: 0; background: linear-gradient(180deg, rgba(239,232,220,.72) 0%, rgba(239,232,220,.16) 56%, transparent 100%); }
@@ -69,6 +70,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-header.is-on-light::before { opacity: 0; }
 .site-header.is-on-light::after { opacity: 1; }
 .site-header.is-hidden { transform: translateY(-112%); opacity: 0; filter: blur(14px); pointer-events: none; }
+.site-header.is-hidden::before, .site-header.is-hidden::after { opacity: 0; }
 .brand { display: block; width: 92px; height: 46px; }
 .brand img {
     display: block;
