@@ -621,6 +621,11 @@ body.lightbox-open { overflow: hidden; }
     .footer-bottom { grid-column: auto; }
 }
 
+/* Photography keeps its original proportions at every breakpoint. */
+.gallery-track .gallery-card { width: auto; height: min(52svh, 460px, calc(88vw / var(--photo-ratio))); aspect-ratio: var(--photo-ratio); }
+.gallery-card img { object-fit: contain; }
+.gallery-card:hover img { transform: none; }
+
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
