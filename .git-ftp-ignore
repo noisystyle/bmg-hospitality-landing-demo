@@ -1,0 +1,9 @@
+.gitignore
+.git-ftp-ignore
+.github/*
+.DS_Store
+README.md
+contact-api/*
+preview-desktop.png
+preview-mobile.png
+private/*

@@ -29,7 +29,13 @@ $year = date('Y');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
-    <link rel="stylesheet" href="assets/css/style.css?v=20261001-1">
+    <link rel="stylesheet" href="assets/css/style.css?v=20261013-legal">
+<script src="assets/js/contact-mail.js?v=20261013-2" defer></script>
+
+<link rel="icon" href="favicon.ico?v=20261013" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/bmg-b-32.png?v=20261013">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/bmg-b-192.png?v=20261013">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/bmg-b-180.png?v=20261013">
 </head>
 <body>
     <a class="skip-link" href="#contenuto">Vai al contenuto</a>
@@ -193,9 +199,9 @@ $year = date('Y');
                     <p>Raccontaci la struttura, il punto da cui parti e ciò che vorresti migliorare. Ti risponderemo con un primo punto di vista, senza presentazioni infinite.</p>
                     <a class="contact-mail" data-contact-link href="mailto:info@bemarketinggroup.it?subject=<?= $mailSubject ?>">info@bemarketinggroup.it <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
                 </div>
-                <form class="contact-form" data-contact-form>
-                    <label><span class="mono">Nome e cognome</span><input type="text" name="name" autocomplete="name" required placeholder="Come ti chiami?"></label>
-                    <label><span class="mono">Email</span><input type="email" name="email" autocomplete="email" required placeholder="nome@dominio.com"></label>
+                <form class="contact-form" data-contact-form="bmg_hospitality_landing" data-default-service="Hospitality">
+                    <label><span class="mono">Nome e cognome</span><input type="text" name="name" maxlength="100" autocomplete="name" required placeholder="Come ti chiami?"></label>
+                    <label><span class="mono">Email</span><input type="email" name="email" maxlength="254" autocomplete="email" required placeholder="nome@dominio.com"></label>
                     <fieldset class="choice-field">
                         <legend class="mono">Su cosa vuoi lavorare?</legend>
                         <div class="choice-grid choice-grid--6">
@@ -207,9 +213,11 @@ $year = date('Y');
                             <label class="choice-option"><input type="radio" name="service" value="Altro"><span>Altro</span></label>
                         </div>
                     </fieldset>
-                    <label><span class="mono">La struttura e il progetto</span><textarea name="message" rows="3" required placeholder="Da dove partiamo?"></textarea></label>
-                    <div class="contact-form-bottom"><small>Usiamo questi dati soltanto per rispondere alla tua richiesta.</small><button type="submit">Richiedi un confronto <i class="ph ph-arrow-up-right" aria-hidden="true"></i></button></div>
-                    <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+                    <label><span class="mono">La struttura e il progetto</span><textarea name="message" maxlength="3000" rows="3" required placeholder="Da dove partiamo?"></textarea></label>
+                    <div data-turnstile style="grid-column: 1 / -1; min-height: 65px; margin: 12px 0;"></div>
+          <div class="contact-form-bottom"><small>Usiamo questi dati soltanto per rispondere alla tua richiesta.</small><button type="submit">Richiedi un confronto <i class="ph ph-arrow-up-right" aria-hidden="true"></i></button></div>
+                    <label hidden aria-hidden="true" style="display:none">Sito web<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
                 </form>
             </div>
         </section>
@@ -225,7 +233,7 @@ $year = date('Y');
             <span>Napoli, Italia</span>
         </div>
         <div class="footer-bottom">
-            <span>© <?= $year ?> BMG srls</span>
+            <span>© <?= $year ?> BMG S.R.L. Semplificata · Sede legale: Via Vicinale S. Maria del Pianto SNC, Torre 5, 80143 Napoli (NA) · C.F. e P.IVA 10631751210 · Registro Imprese di Napoli n. 10631751210 · Capitale sociale € 4.500,00 i.v.</span>
             <a href="#inizio">Torna su <i class="ph ph-arrow-up" aria-hidden="true"></i></a>
         </div>
     </footer>
@@ -244,6 +252,6 @@ $year = date('Y');
     </dialog>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
-    <script src="assets/js/main.js?v=20260930-5" defer></script>
+    <script src="assets/js/main.js?contact=20261013&v=20260930-5" defer></script>
 </body>
 </html>

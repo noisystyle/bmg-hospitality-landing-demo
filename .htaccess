@@ -1,0 +1,7 @@
+Options -Indexes
+DirectoryIndex index.php
+
+# Keep the deployment marker inaccessible from the web.
+<Files ".git-ftp.log">
+    Require all denied
+</Files>
