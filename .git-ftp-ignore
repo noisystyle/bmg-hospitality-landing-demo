@@ -7,3 +7,7 @@ contact-api/*
 preview-desktop.png
 preview-mobile.png
 private/*
+agent.md
+docs/*
+tests/*
+scripts/*
