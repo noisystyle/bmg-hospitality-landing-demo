@@ -8,7 +8,7 @@ Landing dedicata alla comunicazione per hotel e dimore, online su [bemarketinggr
 
 La versione del 24 ottobre 2026 riprende il sistema editoriale del sito principale: Bodoni Moda e DM Sans locali, avorio e salvia, fotografie selezionate dei clienti, loghi e footer con collegamenti social. CSS di base, modulo contatti e gestione del consenso sono condivisi con il sito principale. La versione semplificata conserva una breve presentazione con tre servizi, sei loghi, tre progetti e il modulo con nome, email e messaggio. Header con solo logo e collegamento al contatto; footer compatto. Il layout specifico è in `assets/css/landing-editorial.css` e la personalizzazione in `assets/js/landing-editorial.js`.
 
-Le tre schede fotografiche rimandano direttamente ai progetti Bellevue Syrene, Vetera Matera e Zest. Le immagini e i CSS condivisi provengono da `https://bemarketinggroup.it/assets/`: la landing dipende da quegli asset già pubblicati. I file storici `style.css` e `main.js` sono conservati ma non caricati dal nuovo template.
+Le tre schede fotografiche rimandano direttamente ai progetti Bellevue Syrene, Vetera Matera e Grand Hotel La Favorita. Le immagini e i CSS condivisi provengono da `https://bemarketinggroup.it/assets/`: la landing dipende da quegli asset già pubblicati. I file storici `style.css` e `main.js` sono conservati ma non caricati dal nuovo template.
 
 ## Contatti e misurazione
 
