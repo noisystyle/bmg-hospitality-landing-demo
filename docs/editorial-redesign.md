@@ -29,3 +29,7 @@ I workflow esistenti sono conservati: il collegamento OAuth consente il push del
 ## Pubblicazione verificata
 
 Commit `bb43133`, workflow Keliweb `40043165385` e Pages `40043165423` entrambi riusciti. HTTP 200 su versione normale e personalizzata, con rendering PHP e noindex della personalizzata. La protezione dell’hosting rifiuta la query contenente script con HTTP 403; non viene aggirata. Asset CSS/JS/font pubblicati correttamente. Verifica browser della pagina pubblica, modulo e Turnstile caricato senza inviare email.
+
+## Revisione semplificata approvata dall’utente
+
+L’utente ha chiesto una landing più essenziale rispetto al sito. Ora contiene hero con titolo breve, una presentazione e tre servizi, fascia loghi, tre progetti e modulo a tre campi. Niente menu, carousel o lightbox. Le schede rinviano alle pagine progetto del sito. Footer ridotto a identità, sito/social/privacy e dati societari. Il titolo principale è “Comunicazione per hotel e dimore.”, con CTA “Parliamone”. Il taglio della foto spa Vetera privilegia la vasca.

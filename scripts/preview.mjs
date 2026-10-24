@@ -1,5 +1,5 @@
 // Design preview only: PHP query expressions are represented by their default
-// values. Real PHP rendering is checked by CI and again on Keliweb.
+// values. Real PHP rendering is checked by the Pages build and on Keliweb.
 import http from 'node:http';
 import{readFile}from'node:fs/promises';
 import path from'node:path';

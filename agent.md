@@ -7,3 +7,9 @@ Implementato restyling di `index.php` con sistema editoriale condiviso del sito 
 Conservati PHP e personalizzazione hotel/nome, normalizzazione e escaping dei parametri, invio tramite backend condiviso e Turnstile. Aggiunti noindex per URL personalizzate e canonical pulita. Analytics caricato soltanto sul dominio di produzione attraverso il modulo di consenso già esistente.
 
 Verifica locale Node e browser responsive; rendering PHP della versione predefinita nel workflow Pages esistente e verifica dei parametri sul server dopo il deploy. Non inviare richieste email reali come semplice prova del layout. Non modificare i segreti FTP o il backend per modifiche grafiche.
+
+## 24 ottobre 2026 — Semplificazione della landing
+
+Su approvazione dell’utente ridotta la struttura: titolo e hero più contenuti, presentazione breve con tre servizi, sei loghi compatti, tre schede progetto e modulo con soli nome/email/messaggio. Eliminati menu e relativo script, visualizzatore galleria, sezioni metodo/servizi estese e footer completo. Conservati font e palette BMG, personalizzazione PHP/JS, consenso statistiche e backend contatti con Turnstile e argomento predefinito Hospitality. Nessun invio email di prova.
+
+Controlli: test Node esistenti aggiornati per il nuovo contratto del modulo, verifica browser desktop 1280px e mobile 390/320px, CTA verso il modulo e personalizzazione. Non modificare i workflow: il token non dispone dello scope workflow e quelli esistenti pubblicano già correttamente.

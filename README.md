@@ -6,13 +6,13 @@ Landing dedicata alla comunicazione per hotel e dimore, online su [bemarketinggr
 
 `index.php` contiene il template e la personalizzazione facoltativa `?hotel=...&nome=...`. I valori sono limitati a 90 caratteri, escapati lato PHP e inseriti con `textContent` lato JavaScript. Le URL personalizzate hanno `noindex, follow`; la canonical rimane `/hospitality/`.
 
-La versione del 24 ottobre 2026 riprende il sistema editoriale del sito principale: Bodoni Moda e DM Sans locali, avorio e salvia, fotografie selezionate dei clienti, loghi e footer con collegamenti social. CSS di base, navigazione mobile, galleria, modulo contatti e gestione del consenso sono condivisi con il sito principale. Il layout specifico è in `assets/css/landing-editorial.css` e la personalizzazione in `assets/js/landing-editorial.js`.
+La versione del 24 ottobre 2026 riprende il sistema editoriale del sito principale: Bodoni Moda e DM Sans locali, avorio e salvia, fotografie selezionate dei clienti, loghi e footer con collegamenti social. CSS di base, modulo contatti e gestione del consenso sono condivisi con il sito principale. La versione semplificata conserva una breve presentazione con tre servizi, sei loghi, tre progetti e il modulo con nome, email e messaggio. Header con solo logo e collegamento al contatto; footer compatto. Il layout specifico è in `assets/css/landing-editorial.css` e la personalizzazione in `assets/js/landing-editorial.js`.
 
-La galleria contiene sette fotografie e apre il visualizzatore accessibile del sito. Le immagini e i CSS condivisi provengono da `https://bemarketinggroup.it/assets/`: la landing dipende da quegli asset già pubblicati. I file storici `style.css` e `main.js` sono conservati ma non caricati dal nuovo template.
+Le tre schede fotografiche rimandano direttamente ai progetti Bellevue Syrene, Vetera Matera e Zest. Le immagini e i CSS condivisi provengono da `https://bemarketinggroup.it/assets/`: la landing dipende da quegli asset già pubblicati. I file storici `style.css` e `main.js` sono conservati ma non caricati dal nuovo template.
 
 ## Contatti e misurazione
 
-Il modulo richiede nome, email e messaggio, con scelta dell’argomento. Usa l’endpoint condiviso `/contact-api/index.php`, SMTP Keliweb e Cloudflare Turnstile, senza modificare il backend. Credenziali e configurazioni private restano esterne al repository e alla cartella pubblica.
+Il modulo richiede soltanto nome, email e messaggio; l’argomento predefinito è Hospitality. Usa l’endpoint condiviso `/contact-api/index.php`, SMTP Keliweb e Cloudflare Turnstile, senza modificare il backend. Credenziali e configurazioni private restano esterne al repository e alla cartella pubblica.
 
 Sul dominio BMG viene caricato il modulo esistente di consenso e misurazione: Analytics si attiva secondo le preferenze del visitatore. La misurazione esclude query string e dati di personalizzazione dalle URL registrate. Le anteprime locali/GitHub Pages non caricano Analytics.
 
