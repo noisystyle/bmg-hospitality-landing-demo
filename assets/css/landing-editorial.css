@@ -13,7 +13,7 @@ html { scroll-padding-top: 0; }
 .landing-hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #101b17c4, #101b1761); z-index: -1; }
 .landing-hero-copy { padding-block: 70px 85px; }
 .landing-hero .eyebrow { color: white; margin-bottom: 22px; }
-.landing-hero h1 { font: 500 clamp(48px, 6.1vw, 86px)/1.1 var(--serif); letter-spacing: -.035em; max-width: 850px; }
+.landing-hero h1 { font: 500 clamp(48px, 6.1vw, 86px)/1.1 var(--serif); letter-spacing: -.035em; max-width: 850px; text-wrap: balance; }
 .landing-hero-bottom { margin-top: 24px; }
 .landing-hero-bottom p { font-size: 18px; line-height: 1.75; max-width: 480px; }
 .landing-hero .text-link { margin-top: 25px; color: white; padding-bottom: 7px; font-size: 16px; }

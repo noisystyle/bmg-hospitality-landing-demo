@@ -16,4 +16,4 @@ Controlli: test Node esistenti aggiornati per il nuovo contratto del modulo, ver
 
 ### Leggibilità
 
-Su richiesta dell’utente aumentati i testi principali a 18px su desktop e 17px su mobile, testi servizi a 17px, etichette del modulo a 13px, campi a 18px, CTA a 16px. Peso 500 per i titoli Bodoni, maggiore contrasto sopra la foto, didascalie e footer più grandi e linee dei campi più visibili. Struttura compatta invariata. CSS v3 per evitare cache della versione precedente.
+Su richiesta dell’utente aumentati i testi principali a 18px su desktop e 17px su mobile, testi servizi a 17px, etichette del modulo a 13px, campi a 18px, CTA a 16px. Peso 500 per i titoli Bodoni, maggiore contrasto sopra la foto, didascalie e footer più grandi e linee dei campi più visibili. Struttura compatta invariata. Titolo con a capo bilanciati su mobile. CSS v4 per evitare cache della versione precedente.

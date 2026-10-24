@@ -32,7 +32,7 @@ $year = date('Y');
   <link rel="stylesheet" href="https://bemarketinggroup.it/assets/css/editorial-preview.css?v=16">
   <link rel="stylesheet" href="assets/css/editorial-fonts.css?v=1">
   <link rel="stylesheet" href="https://bemarketinggroup.it/assets/css/editorial-design.css?v=9">
-  <link rel="stylesheet" href="assets/css/landing-editorial.css?v=3">
+  <link rel="stylesheet" href="assets/css/landing-editorial.css?v=4">
   <link rel="stylesheet" href="https://bemarketinggroup.it/assets/css/site-measurement.css?v=1">
   <script src="https://bemarketinggroup.it/assets/js/contact-mail.js?v=20261013-2" defer></script>
   <script src="assets/js/landing-editorial.js?v=1" defer></script>
@@ -49,7 +49,7 @@ $year = date('Y');
     <section class="landing-hero" id="inizio" aria-labelledby="landing-title">
       <div class="landing-hero-image"><img src="https://bemarketinggroup.it/assets/images/clients/bellevue-syrene/selection-20261019-bellevue-terrace-960.webp" srcset="https://bemarketinggroup.it/assets/images/clients/bellevue-syrene/selection-20261019-bellevue-terrace-480.webp 480w, https://bemarketinggroup.it/assets/images/clients/bellevue-syrene/selection-20261019-bellevue-terrace-960.webp 960w, https://bemarketinggroup.it/assets/images/clients/bellevue-syrene/selection-20261019-bellevue-terrace-1600.webp 1600w" sizes="(max-width: 700px) 1100px, 100vw" width="1600" height="1073" alt="La terrazza di Bellevue Syrene tra colonne, mare e luce del tramonto" loading="eager" decoding="async" fetchpriority="high"></div>
       <div class="landing-hero-copy page-width"><p class="eyebrow">Be Marketing Group · Hospitality</p>
-        <h1 id="landing-title">Comunicazione per<br>hotel e dimore.</h1>
+        <h1 id="landing-title">Comunicazione per hotel e dimore.</h1>
         <div class="landing-hero-bottom"><p>Strategia, fotografie e contenuti per raccontare la tua struttura e seguirne la comunicazione.</p><a class="text-link" href="#contatti">Parliamone</a></div>
       </div><p class="landing-photo-label">Bellevue Syrene · Sorrento</p>
     </section>
