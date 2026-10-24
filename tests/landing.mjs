@@ -24,7 +24,7 @@ const p=state('?hotel=Hotel%20Prova&nome=Anna');assert.equal(p.note.textContent,
 const hostile=state('?hotel=%3Cimg%20src%3Dx%20onerror%3Dalert(1)%3E&nome=%3Cscript%3E');assert.equal(hostile.note.textContent,'Un’idea per <img src=x onerror=alert(1)>');assert.equal(hostile.heading.textContent,'<script>, ne parliamo?');assert.equal(hostile.note.innerHTML,undefined);assert.equal(state('?hotel='+('x'.repeat(120))).note.textContent.length,102);
 console.log('PASS: editorial shared assets, seven gallery photos, contact contract, font files, reduced motion, safe client personalization.');
 const php=spawnSync('php',['-v'],{encoding:'utf8'});
-if(php.error){assert.notEqual(process.env.REQUIRE_PHP,'1','PHP is required for deployment');console.log('SKIP: real PHP rendering unavailable locally; required in deployment CI.');}
+if(php.error){assert.notEqual(process.env.REQUIRE_PHP,'1','PHP is required for deployment');console.log('SKIP: real PHP rendering unavailable locally; run REQUIRE_PHP=1 in a PHP environment.');}
 else{
  for(const query of ['', 'hotel=Hotel+Prova&nome=Anna', 'hotel=%3Cscript%3Ealert(1)%3C%2Fscript%3E&nome=%22%3E%3Cimg+src%3Dx%3E', 'hotel%5B%5D=x&nome%5B%5D=x']){
   const r=spawnSync('php',['-r','parse_str($argv[1], $_GET); include "index.php";',query],{encoding:'utf8'});assert.equal(r.status,0,r.stderr);assert.equal(r.stderr,'');assert.ok(!r.stdout.includes('<?'));assert.doesNotMatch(r.stdout,/<script>alert\(1\)/);

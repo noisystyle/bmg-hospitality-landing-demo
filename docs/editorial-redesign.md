@@ -25,3 +25,7 @@ Anteprima browser locale: desktop 1280px, mobile 390px e 320px; nessuno scorrime
 Test Node: contratto del modulo, dipendenze condivise, asset font, singolo H1, canonical, sicurezza dei parametri lato JS. Il PHP locale non è installato: il workflow Pages esistente esegue PHP per generare la versione predefinita. I parametri vengono verificati sul server dopo la pubblicazione. Nessuna modifica all’API di contatto, al sito principale o ai segreti.
 
 I workflow esistenti sono conservati: il collegamento OAuth consente il push del codice ma non modifiche ai workflow. Non sono richiesti nuovi permessi per il restyling.
+
+## Pubblicazione verificata
+
+Commit `bb43133`, workflow Keliweb `40043165385` e Pages `40043165423` entrambi riusciti. HTTP 200 su versione normale e personalizzata, con rendering PHP e noindex della personalizzata. La protezione dell’hosting rifiuta la query contenente script con HTTP 403; non viene aggirata. Asset CSS/JS/font pubblicati correttamente. Verifica browser della pagina pubblica, modulo e Turnstile caricato senza inviare email.
