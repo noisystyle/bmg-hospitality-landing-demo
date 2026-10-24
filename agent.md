@@ -13,3 +13,7 @@ Verifica locale Node e browser responsive; rendering PHP della versione predefin
 Su approvazione dell’utente ridotta la struttura: titolo e hero più contenuti, presentazione breve con tre servizi, sei loghi compatti, tre schede progetto e modulo con soli nome/email/messaggio. Eliminati menu e relativo script, visualizzatore galleria, sezioni metodo/servizi estese e footer completo. Conservati font e palette BMG, personalizzazione PHP/JS, consenso statistiche e backend contatti con Turnstile e argomento predefinito Hospitality. Nessun invio email di prova.
 
 Controlli: test Node esistenti aggiornati per il nuovo contratto del modulo, verifica browser desktop 1280px e mobile 390/320px, CTA verso il modulo e personalizzazione. Non modificare i workflow: il token non dispone dello scope workflow e quelli esistenti pubblicano già correttamente.
+
+### Leggibilità
+
+Su richiesta dell’utente aumentati i testi principali a 18px su desktop e 17px su mobile, testi servizi a 17px, etichette del modulo a 13px, campi a 18px, CTA a 16px. Peso 500 per i titoli Bodoni, maggiore contrasto sopra la foto, didascalie e footer più grandi e linee dei campi più visibili. Struttura compatta invariata. CSS v3 per evitare cache della versione precedente.

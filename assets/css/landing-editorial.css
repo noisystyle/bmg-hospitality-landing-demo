@@ -1,5 +1,8 @@
 /* Compact campaign landing, using the main site's typography and palette. */
 html { scroll-padding-top: 0; }
+.editorial-landing { font-size: 18px; }
+.editorial-landing .eyebrow { font-size: 12px; letter-spacing: .08em; }
+.editorial-landing .text-link { font-size: 16px; font-weight: 500; }
 .editorial-landing main { padding-top: 0; }
 .editorial-landing section[id] { scroll-margin-top: 24px; }
 .landing-header { min-height: 80px; display: flex; align-items: center; gap: 24px; }
@@ -7,24 +10,24 @@ html { scroll-padding-top: 0; }
 .landing-hero { position: relative; isolation: isolate; min-height: 520px; display: flex; align-items: center; color: white; background: #323e35; }
 .landing-hero-image { position: absolute; inset: 0; z-index: -2; }
 .landing-hero-image img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 46%; }
-.landing-hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #101b17b3, #101b1747); z-index: -1; }
+.landing-hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #101b17c4, #101b1761); z-index: -1; }
 .landing-hero-copy { padding-block: 70px 85px; }
 .landing-hero .eyebrow { color: white; margin-bottom: 22px; }
-.landing-hero h1 { font: 400 clamp(48px, 6.1vw, 86px)/1.06 var(--serif); letter-spacing: -.035em; max-width: 850px; }
+.landing-hero h1 { font: 500 clamp(48px, 6.1vw, 86px)/1.1 var(--serif); letter-spacing: -.035em; max-width: 850px; }
 .landing-hero-bottom { margin-top: 24px; }
-.landing-hero-bottom p { font-size: 16px; line-height: 1.8; max-width: 440px; }
-.landing-hero .text-link { margin-top: 25px; color: white; padding-bottom: 7px; font-size: 14px; }
-.landing-photo-label { position: absolute; bottom: 16px; right: var(--page-gutter); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
-.editorial-landing h2 { font: 400 clamp(34px, 3.8vw, 54px)/1.12 var(--serif); letter-spacing: -.025em; }
+.landing-hero-bottom p { font-size: 18px; line-height: 1.75; max-width: 480px; }
+.landing-hero .text-link { margin-top: 25px; color: white; padding-bottom: 7px; font-size: 16px; }
+.landing-photo-label { position: absolute; bottom: 16px; right: var(--page-gutter); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+.editorial-landing h2 { font: 500 clamp(34px, 3.8vw, 54px)/1.16 var(--serif); letter-spacing: -.025em; }
 .landing-offer { padding-block: 65px 48px; }
 .landing-offer-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 9%; align-items: center; }
-.landing-offer-heading > p { font-size: 16px; line-height: 1.85; max-width: 490px; }
+.landing-offer-heading > p { font-size: 18px; line-height: 1.75; max-width: 490px; }
 .landing-services { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; margin-top: 38px; }
 .landing-services article { border-top: 1px solid var(--rule); padding-top: 20px; }
-.landing-services h3 { font: 400 25px/1.3 var(--serif); letter-spacing: -.02em; margin-bottom: 10px; }
-.landing-services p { font-size: 14px; line-height: 1.8; max-width: 330px; }
+.landing-services h3 { font: 500 27px/1.3 var(--serif); letter-spacing: -.02em; margin-bottom: 10px; }
+.landing-services p { font-size: 17px; line-height: 1.75; max-width: 350px; }
 .editorial-landing .client-section { padding-block: 24px 35px; border-top: 0; }
-.editorial-landing .client-section h2 { font: 400 10px/1.6 var(--sans); letter-spacing: .13em; }
+.editorial-landing .client-section h2 { font: 500 12px/1.6 var(--sans); letter-spacing: .08em; }
 .editorial-landing .client-logos { margin-top: 18px; gap: 28px; }
 .editorial-landing .client-logos a { min-height: 80px; }
 .editorial-landing .client-logos img { max-width: 130px; max-height: 70px; }
@@ -41,20 +44,27 @@ html { scroll-padding-top: 0; }
 .landing-project-photo img[src*="vetera-spa"] { object-position: 50% 85%; }
 @media (hover:hover) { .landing-project-photo:hover img { transform: scale(1.025); } }
 .landing-project figcaption { padding-top: 15px; }
-.landing-project figcaption .eyebrow { margin-bottom: 5px; font-size: 9px; }
-.landing-project h3 { font: 400 26px/1.3 var(--serif); letter-spacing: -.02em; }
+.landing-project figcaption .eyebrow { margin-bottom: 7px; font-size: 12px; }
+.landing-project h3 { font: 500 28px/1.3 var(--serif); letter-spacing: -.02em; }
 .landing-contact-surface { background: #e5e0d5; padding-block: 55px 60px; }
 .editorial-landing .contact { padding-block: 0; }
 .editorial-landing .contact-layout { gap: 9%; }
 .editorial-landing .contact-heading h2 { font-size: clamp(36px, 4vw, 58px); overflow-wrap: anywhere; }
-.editorial-landing .contact-heading > p { font-size: 16px; line-height: 1.85; max-width: 370px; margin-top: 22px; }
+.editorial-landing .contact-heading > p { font-size: 18px; line-height: 1.75; max-width: 400px; margin-top: 22px; }
 .editorial-landing .contact-heading .text-link { margin-top: 18px; }
+.editorial-landing .section-line { font-size: 12px; letter-spacing: .06em; }
+.editorial-landing .contact-form .field-label { font-size: 13px; font-weight: 500; letter-spacing: .04em; }
+.editorial-landing .contact-form :is(input, textarea) { font-size: 18px; line-height: 1.6; border-bottom-color: #969b8d; padding-block: 10px 12px; }
+.editorial-landing .form-bottom { flex-wrap: wrap; }
+.editorial-landing .form-bottom small { font-size: 14px; line-height: 1.7; max-width: 280px; }
+.editorial-landing .form-bottom button { font-size: 16px; min-height: 54px; font-weight: 500; }
+.editorial-landing .form-status { font-size: 16px; }
 .landing-personal-note { margin-block: 24px; color: var(--ink); overflow-wrap: anywhere; }
 .editorial-landing .turnstile { grid-column: 1 / -1; min-height: 65px; }
 .landing-footer { padding-block: 28px 20px; }
-.landing-footer-top { display: flex; align-items: baseline; justify-content: space-between; gap: 30px; font-size: 12px; }
+.landing-footer-top { display: flex; align-items: baseline; justify-content: space-between; gap: 30px; font-size: 14px; }
 .landing-footer-top nav { display: flex; flex-wrap: wrap; gap: 14px 24px; }
-.landing-footer .footer-legal { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 30px; border-top: 1px solid var(--rule); margin-top: 24px; padding-top: 16px; color: var(--muted); font-size: 10px; line-height: 1.8; }
+.landing-footer .footer-legal { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 30px; border-top: 1px solid var(--rule); margin-top: 24px; padding-top: 16px; color: var(--muted); font-size: 12px; line-height: 1.8; }
 .landing-footer .footer-legal p { max-width: 900px; }
 .landing-footer .footer-legal > span { margin-left: auto; white-space: nowrap; }
 @media (max-width: 900px) {
@@ -71,15 +81,15 @@ html { scroll-padding-top: 0; }
   .landing-hero { min-height: 470px; }
   .landing-hero-copy { padding-block: 58px 72px; }
   .landing-hero h1 { font-size: clamp(40px, 10.8vw, 62px); }
-  .landing-hero .eyebrow { font-size: 9px; margin-bottom: 20px; }
-  .landing-hero-bottom p { font-size: 15px; }
-  .landing-photo-label { font-size: 8px; }
+  .landing-hero .eyebrow { font-size: 11px; margin-bottom: 20px; }
+  .landing-hero-bottom p { font-size: 17px; }
+  .landing-photo-label { font-size: 10px; }
   .landing-offer { padding-block: 45px 25px; }
   .landing-offer-heading { grid-template-columns: 1fr; gap: 22px; }
-  .landing-offer-heading > p { font-size: 15px; }
+  .landing-offer-heading > p { font-size: 17px; }
   .landing-services { grid-template-columns: 1fr; gap: 20px; margin-top: 28px; }
   .landing-services article { padding-top: 15px; }
-  .landing-services h3 { font-size: 24px; margin-bottom: 7px; }
+  .landing-services h3 { font-size: 26px; margin-bottom: 7px; }
   .landing-services p { max-width: none; }
   .editorial-landing .client-section { padding-block: 20px 25px; }
   .editorial-landing .client-logos { gap: 8px 16px; }
@@ -88,10 +98,10 @@ html { scroll-padding-top: 0; }
   .editorial-landing .client-logos .client-logo--favorita { max-width: 62px; }
   .landing-projects { padding-block: 20px 45px; }
   .landing-project-grid { grid-template-columns: 1fr; gap: 26px; }
-  .landing-project h3 { font-size: 25px; }
+  .landing-project h3 { font-size: 27px; }
   .landing-contact-surface { padding-block: 40px 45px; }
   .editorial-landing .contact-layout { gap: 30px; }
-  .editorial-landing .contact-heading > p { font-size: 15px; }
+  .editorial-landing .contact-heading > p { font-size: 17px; }
   .landing-footer-top { flex-direction: column; gap: 16px; }
   .landing-footer-top nav { justify-content: flex-start; gap: 12px 22px; }
   .landing-footer .footer-legal { margin-top: 20px; }

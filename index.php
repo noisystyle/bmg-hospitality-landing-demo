@@ -32,7 +32,7 @@ $year = date('Y');
   <link rel="stylesheet" href="https://bemarketinggroup.it/assets/css/editorial-preview.css?v=16">
   <link rel="stylesheet" href="assets/css/editorial-fonts.css?v=1">
   <link rel="stylesheet" href="https://bemarketinggroup.it/assets/css/editorial-design.css?v=9">
-  <link rel="stylesheet" href="assets/css/landing-editorial.css?v=2">
+  <link rel="stylesheet" href="assets/css/landing-editorial.css?v=3">
   <link rel="stylesheet" href="https://bemarketinggroup.it/assets/css/site-measurement.css?v=1">
   <script src="https://bemarketinggroup.it/assets/js/contact-mail.js?v=20261013-2" defer></script>
   <script src="assets/js/landing-editorial.js?v=1" defer></script>
